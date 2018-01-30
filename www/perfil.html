@@ -1,0 +1,244 @@
+<head>
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Car 2 Fit</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link href="assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+     
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/menu-inf.css" rel="stylesheet" />
+
+</head>
+<body class="signup-page">
+<!-- Navbar -->
+
+<div class="wrapper">
+    <div class="header" style="background-image: url('assets/img/chuttersnap-299121.jpg');">
+    	<div class="container">
+	   		<div class="row">
+					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+						<div class="card card-signup">
+							<form class="form" method="" action="">
+							    <div class="header header-success text-center">
+									<h4 class="text-uppercase">Mi perfil</h4>
+								</div>
+                                <div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Usuario</label>
+                						<input class="form-control"type="text" value="car2fit"/>
+                					</div>
+                				</div>
+                			    <div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Email</label>
+                						<input class="form-control"type="email" value="car2fit@llorente.es"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Nombre</label>
+                						<input class="form-control"type="text" value="car2fit"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Apellidos</label>
+                						<input class="form-control"type="text" value="car2fit_Apellido"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Fecha nacimiento</label>
+                                        <input class="datepicker form-control" type="text" value="03/12/1990"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Direccion</label>
+                						<input class="form-control"type="text" value="C\Calle"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Codigo Postal</label>
+                						<input class="form-control"type="text" value="39999"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Pais</label>
+                						<input class="form-control"type="text" value="España"/>
+                					</div>
+                				</div>
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label class="control-label">Telefono de Contacto</label>
+                						<input class="form-control"type="text" value="987654321"/>
+                					</div>
+                				</div>
+                				
+                				 <div class="col-sm-3">
+                    				<div class="togglebutton">
+                                    	<label>
+                                        	Empresa
+                                        	<input onChange="pagoOnChange(this)" id="check" type="checkbox" checked >
+                                    		Usuario
+                                    	</label>
+                                    </div>
+                                </div>
+                               
+                                    <div id="usuario_prefil" style="display:;">
+                                        <hr size="2px" color="transparent" />
+                                        <div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">DNI</label>
+                        						<input class="form-control"type="text" value="7522222-S"/>
+                        					</div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Sexo</label>
+                        						<input class="form-control"type="text" value="Masculino"/>
+                        					</div>
+                        				</div>
+                                        <div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Tarjeta de debito/credito para pagos</label>
+                        						<input class="form-control"type="text" value="21356981238771283"/>
+                        					</div>
+                        				</div>
+                    				</div>
+                    				<div id="empresa_perfil" style="display: none;">
+                        				<hr size="2px" color="transparent" />
+                                        <div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">NIF</label>
+                        						<input class="form-control"type="text" value="21312SE"/>
+                        					</div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Nombre Empresa</label>
+                        						<input class="form-control"type="text" value="Car2Fit"/>
+                        					</div>
+                        				</div>
+                                        <div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Direccion Empresa</label>
+                        						<input class="form-control"type="text" value="C\Calle"/>
+                        					</div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Codigo Postal</label>
+                        						<input class="form-control"type="text" value="39877"/>
+                        					</div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        					<div class="form-group label-floating">
+                        						<label class="control-label">Pais</label>
+                        						<input class="form-control"type="text" value="España"/>
+                        					</div>
+                        				</div>
+                    				</div>
+                				
+                				<hr size="2px" color="transparent" />
+                				<div class="col-sm-3">
+                					<div class="form-group label-floating">
+                						<label>Metodo de Pago  
+                    						<button class="btn btn-info btn-small">
+                    						    <a href="metodo_pago.html" style="color:white">Añadir</a>
+                    						</button>
+                						</label>
+                						
+                					</div>
+                				</div>
+                				<div class="col-sm-3" >
+                				    <label class="form-group label-floating" >Tarjeta XXXXXXXXXXXX4521</label>
+                				</div>
+                				<div class="col-sm-3" >
+                				    <label class="form-group label-floating" >Tarjeta XXXXXXXXXXXX5675</label>
+                				</div>
+                				<div class="col-sm-3">
+                				    <label class="form-group label-floating">Tarjeta XXXXXXXXXXXX6328</label>
+                				</div>
+                				<div class="footer text-center">
+    								<div class="col-sm-4">
+                    	                <button class="btn btn-regular btn-round btt-orange"><a href="#">Guardar Cambios</a></button> 
+                                    </div>
+    							</div>
+                			</form>
+					    </div>
+				    </div>
+			</div>
+			 <nav class="menu">  
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/> 
+            <label class="menu-open-button" for="menu-open">    
+                <span class="hamburger hamburger-1"></span>    
+                <span class="hamburger hamburger-2"></span>    
+                <span class="hamburger hamburger-3"></span>  
+            </label>   
+            <a href="perfil.html" class="menu-item">
+               <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="vehiculo.html" class="menu-item">
+               <i class="fa fa-car" aria-hidden="true"></i>
+            </a>
+            <a href="taller.html" class="menu-item">
+                <i class="fa fa-wrench" aria-hidden="true"></i>
+            </a>
+            <a href="inicio.html" class="menu-item">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+        </nav>  
+        </div>
+        </div>
+    </div> 
+ <!--   Core JS Files   -->
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/material.min.js"></script>
+
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="/assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+    
+    <script>  
+    function pagoOnChange(sel) {
+          if (!sel.checked){
+               divC = document.getElementById("empresa_perfil");
+               divC.style.display = "";
+    
+               divT = document.getElementById("usuario_prefil");
+               divT.style.display = "none";
+    
+          }else{
+    
+               divC = document.getElementById("empresa_perfil");
+               divC.style.display="none";
+    
+               divT = document.getElementById("usuario_prefil");
+               divT.style.display = "";
+          }
+    };
+    
+    </script>
+</body>
